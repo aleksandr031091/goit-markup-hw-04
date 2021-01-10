@@ -51,6 +51,7 @@ html {
     list-style: none;
 }
 
+
 /*шапка */
 .container-head {
     display: flex;
@@ -64,7 +65,7 @@ html {
 }
 .head {
     background-color: #ffffff;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .logo {
     font-family: Raleway, Oleo Script, sans-serif;
@@ -136,7 +137,25 @@ html {
 
 /*заголовок*/
 .hero {
+    display: flex;
+    height: 600px;
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
     text-align: center;
+
+    background-color: #C4C4C4;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url("../img/hero-img.jpg");
+
+}
+.hero-content {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .hero-title {
     margin-top: 0;
@@ -148,7 +167,6 @@ html {
     letter-spacing: 0.06em;
     color: #FFFFFF;
 }
-
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -162,6 +180,7 @@ html {
 .section-link {
     text-decoration: none;
 }
+
 
 /*секциz-преимущества*/
 .section-advantages {
@@ -190,6 +209,30 @@ html {
     font-size: 14px;
     line-height: 1.71;
 }
+.item::before {
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+.icon-satellite::before {;
+    background-image: url("../img/svg/advantages/antenna\ 1.svg");
+}
+.icon-clock::before {
+    background-image: url("../img/svg/advantages/clock\ 1.svg");
+}
+.icon-diagram::before {
+    background-image: url("../img/svg/advantages/diagram\ 1.svg");
+}
+.icon-astronaut::before {
+    background-image: url("../img/svg/advantages/astronaut\ 1.svg");
+}
+
 
 /*вид-деятельности*/
 .section-direction {
@@ -202,8 +245,8 @@ html {
     margin-right: 30px;
 }
 
-/*наша-команда*/
 
+/*наша-команда*/
 .section-tim {
     background-color: #F5F4FA;
 }
@@ -240,6 +283,8 @@ display: flex;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+
+
 /*партфолио*/
 .partfolio-nav {
     display: flex;
@@ -293,6 +338,7 @@ display: flex;
     line-height: 1.87;
     color: #757575;
 }
+
 
 /*подвал*/
 .container-footer {
