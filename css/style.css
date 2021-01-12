@@ -136,22 +136,7 @@ padding-bottom: 94px;
 .auth-nav .link:focus {
     color:  #2196F3;
 }
-.items .icon-envelope::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-image: url("../img/svg/envelope.svg");
-}
-.items .icon-smartphone::before {
-    display: inline-block;
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    background-image: url("../img/svg/smartphone.svg");
-}
+
 
 
 /*заголовок*/
