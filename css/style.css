@@ -344,8 +344,8 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.company-logo :focus,
-.company-logo :hover {
+.company .company-box :focus,
+.company .company-box :hover {
   fill: #2196f3;
 }
 .company-1 {
