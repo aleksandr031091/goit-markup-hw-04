@@ -387,8 +387,6 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
-.company-box {
-}
 .company-logo :hover,
 .company-logo :focus {
   color: #2196f3;
@@ -604,6 +602,7 @@ img {
 }
 .button.primary:hover,
 .button.primary:focus {
+  background: #188ce8;
 }
 .button.secondary {
   padding: 6px 22px;
