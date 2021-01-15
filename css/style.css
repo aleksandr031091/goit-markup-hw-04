@@ -7,7 +7,8 @@ html {
   box-sizing: inherit;
 }
 :root {
-  --accentcolor: red;
+  --accentcolor: #2196f3;
+  --primarycolor: #ffffff;
 }
 
 .visually-hidden {
@@ -41,9 +42,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-:root {
-  --primary-bg-color: var(--primary-bg-color);
-}
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -62,7 +60,7 @@ img {
   font-family: Roboto, sans-serif;
   color: #757575;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
+  background-color: var(--primarycolor);
 }
 .list {
   padding: 0;
@@ -73,7 +71,7 @@ img {
   text-decoration: none;
 }
 
-/*шапка */
+/*===============шапка===============*/
 .container-head {
   display: flex;
   align-items: center;
@@ -87,7 +85,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  background-color: #ffffff;
+  background-color: var(--primarycolor);
   border-bottom: 1px solid #ececec;
 }
 .logo {
@@ -100,10 +98,10 @@ img {
   text-decoration: none;
 }
 .capital-head {
-  color: #2196f3;
+  color: var(--accentcolor);
 }
 .capital-footer {
-  color: #2196f3;
+  color: var(--accentcolor);
 }
 
 .items {
@@ -127,15 +125,16 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: #212121;
   text-decoration: none;
 }
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accentcolor);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accentcolor);
 }
 
 .auth-nav {
@@ -156,31 +155,32 @@ img {
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-  color: #2196f3;
+  color: var(--accentcolor);
 }
-
-.aut-svg-smartfone {
-  width: 10px;
+.aut-svg-envelope {
+  width: 16px;
   height: 16px;
   margin-right: 10px;
   fill: #757575;
 }
+.aut-svg-smartfone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+
+  fill: #757575;
+}
 .auth-nav .link:hover .aut-svg-smartfone,
 .auth-nav .link:focus {
-  fill: #2196f3;
-}
-.aut-svg-envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: #757575;
+  fill: var(--accentcolor);
 }
 .auth-nav .link:hover .aut-svg-envelope,
 .auth-nav .link:focus {
-  fill: #2196f3;
+  fill: var(--accentcolor);
 }
+/*===============шапка===============*/
 
-/*заголовок*/
+/*===============заголовок===============*/
 .hero {
   display: flex;
   content: '';
@@ -212,7 +212,7 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primarycolor);
 }
 .section-title {
   margin-top: 0;
@@ -227,8 +227,9 @@ img {
 .section-link {
   text-decoration: none;
 }
+/*===============заголовок===============*/
 
-/*секциz-преимущества*/
+/*===============секциz-преимущества===============*/
 .section-advantages {
   padding-top: 94px;
   padding-bottom: 47px;
@@ -286,7 +287,7 @@ img {
   background-image: url('../img/svg/astronaut.svg');
 }
 
-/*вид-деятельности*/
+/*===============вид-деятельности===============*/
 .section-activity {
   padding-top: 47px;
   padding-bottom: 94px;
@@ -301,8 +302,9 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 }
+/*===============секциz-преимущества===============*/
 
-/*наша-команда*/
+/*===============наша-команда===============*/
 .section-tim {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -339,7 +341,7 @@ img {
   margin-top: 30px;
   margin-left: 30px;
 
-  background: #ffffff;
+  background: var(--primarycolor);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -360,10 +362,11 @@ img {
 }
 .social-link:hover .social-svg-person,
 .social-link:focus .social-svg-person {
-  fill: white;
+  fill: var(--primarycolor);
 }
+/*===============наша-команда===============*/
 
-/*постоянные клиенты*/
+/*===============постоянные клиенты===============*/
 .company {
   display: flex;
   margin-top: -30px;
@@ -426,13 +429,15 @@ img {
 }
 .company-logo:hover .icon,
 .company-logo:focus .icon {
-  fill: #2196f3;
+  fill: var(--accentcolor);
 }
 .company-logo:hover,
 .company-logo:focus {
-  border-color: #2196f3;
+  border-color: var(--accentcolor);
 }
-/*партфолио*/
+/*===============постоянные клиенты===============*/
+
+/*===============партфолио===============*/
 .portfolio-nav {
   display: flex;
   justify-content: center;
@@ -463,7 +468,7 @@ img {
   padding-bottom: 20px;
   padding-left: 24px;
 
-  background: #ffffff;
+  background: var(--primarycolor);
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -486,8 +491,9 @@ img {
   line-height: 1.87;
   color: #757575;
 }
+/*===============партфолио===============*/
 
-/*подвал*/
+/*===============подвал===============*/
 .container-footer {
   display: flex;
   width: 1200px;
@@ -512,7 +518,7 @@ img {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primarycolor);
   text-decoration: none;
 }
 .citi-address {
@@ -527,7 +533,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--primarycolor);
 }
 .footer-contacts {
   display: flex;
@@ -556,8 +562,9 @@ img {
   flex-direction: column;
   width: 270px;
 }
+/*===============подвал===============*/
 
-/*соц сети*/
+/*===============соц сети===============*/
 
 .tittle-social {
   font-weight: bold;
@@ -566,7 +573,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--primarycolor);
 }
 .social-box {
   width: 270px;
@@ -592,14 +599,15 @@ img {
   width: 20px;
   height: 20px;
 
-  fill: #ffffff;
+  fill: var(--primarycolor);
 }
 .social-link:hover,
 .social-link:focus {
-  background-color: #2196f3;
+  background-color: var(--accentcolor);
 }
+/*===============соц сети===============*/
 
-/*кнопка*/
+/*===============кнопка===============*/
 .button {
   border: transparent;
   border-radius: 4px;
@@ -616,8 +624,8 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primarycolor);
+  background-color: var(--accentcolor);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .button.primary:hover,
@@ -631,6 +639,7 @@ img {
 }
 .button.secondary:hover,
 .button.secondary:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--primarycolor);
+  background-color: var(--accentcolor);
 }
+/*===============кнопка===============*/
